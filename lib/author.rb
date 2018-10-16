@@ -14,8 +14,9 @@ class Author
   end
 
   def add_post_by_title(title)
-    binding.pry
-
+    title = Post.new(title)
+    @posts << title
+    title.author = self
 
   end
 
