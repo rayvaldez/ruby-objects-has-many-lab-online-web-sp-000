@@ -12,7 +12,10 @@ class Post
   end
 
   def author_name
-    binding.pry
-    self.author.name
+    if self.author
+      self.author.name
+    else
+      nil
   end
 end
+#returns nil if post does not have an author
